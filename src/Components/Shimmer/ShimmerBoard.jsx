@@ -2,7 +2,7 @@ import ShimmerItem from "./ShimmerItem";
 
 const ShimmerBoard = () => {
   return (
-    <div className="allShimmer">
+    <div className="shimmer-container">
       <ShimmerItem />
       <ShimmerItem />
       <ShimmerItem />

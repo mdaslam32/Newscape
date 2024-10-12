@@ -7,10 +7,7 @@ const NewsBoard = ({ category }) => {
 
   if (articles.length === 0) return <ShimmerBoard />;
   return (
-    <div className="board">
-      <h2 className="text-center mt-2">
-        Latest <span className="badge bg-danger"> News </span>
-      </h2>
+    <div className="board d-flex justify-content-evenly flex-wrap">
       {articles.map((news) => {
         return (
           <NewsItem

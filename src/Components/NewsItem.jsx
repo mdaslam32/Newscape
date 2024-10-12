@@ -4,14 +4,13 @@ const NewsItem = (props) => {
   const { title, description, icon, url, publish, source } = props;
   return (
     <div
-      className="card bg-dark text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2"
-      style={{ maxWidth: "300px" }}
+      className="card bg-dark text-light d-inline-block p-2 m-2"
+      style={{ maxWidth: "min-content" }}
     >
       <a href={url} target="_blank">
         <img
           src={icon || news}
-          style={{ height: "200px", width: "280px" }}
-          className="card-img-top"
+          className="card-img-top rounded"
           alt="News Image"
         />
       </a>
@@ -19,7 +18,7 @@ const NewsItem = (props) => {
         <a href={url} target="_blank">
           <h5 className="card-title">{title.slice(0, 60)}...</h5>
         </a>
-        <p className="card-text">
+        <p className="card-text mb-1">
           {description
             ? description.slice(0, 90) + "..."
             : "News is a report of a current event. It is information about something that has just happened."}

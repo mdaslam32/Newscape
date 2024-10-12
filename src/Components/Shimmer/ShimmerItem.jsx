@@ -1,17 +1,17 @@
 import "./ShimmerItem.css";
 const ShimmerItem = () => {
   return (
-    <div className="shimmerCard">
-      <div className="shimmerBG media"></div>
-      <div className="p-25">
-        <div className="shimmerBG title-line"></div>
-        <div className="shimmerBG title-line end"></div>
+    <div className="shimmer-card p-2 m-2 rounded">
+      <div className="shimmer-bg media rounded"></div>
+      <div className="p-3">
+        <div className="shimmer-bg title-line"></div>
+        <div className="shimmer-bg title-line end"></div>
 
-        <div className="shimmerBG content-line m-t-24"></div>
-        <div className="shimmerBG content-line"></div>
-        <div className="shimmerBG content-line"></div>
-        <div className="shimmerBG content-line"></div>
-        <div className="shimmerBG content-line end"></div>
+        <div className="shimmer-bg content-line mt-4"></div>
+        <div className="shimmer-bg content-line"></div>
+        <div className="shimmer-bg content-line"></div>
+        <div className="shimmer-bg content-line"></div>
+        <div className="shimmer-bg content-line end"></div>
       </div>
     </div>
   );
